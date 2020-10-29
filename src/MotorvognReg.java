@@ -1,9 +1,9 @@
 import static javax.swing.JOptionPane.showInputDialog;
 
-class Dato {
+class Dato1 {
     private int dag, måned, år;
 
-    public Dato( int dag, int måned, int år ) {
+    public Dato1( int dag, int måned, int år ) {
         this.dag = dag;
         this.måned = måned;
         this.år =år;
@@ -38,10 +38,10 @@ class Bil{
 
 
   public  String typebetegnelse ;
-  public Dato førstegangsregistrert;
+  public Dato1 førstegangsregistrert;
   public String kjennetegn;
 
-    public Bil(String typebetegnelse, Dato førstegangsregistrert, String kjennetegn) {
+    public Bil(String typebetegnelse, Dato1 førstegangsregistrert, String kjennetegn) {
         this.typebetegnelse = typebetegnelse;
         this.førstegangsregistrert = førstegangsregistrert;
         this.kjennetegn = kjennetegn;
@@ -67,10 +67,10 @@ public class MotorvognReg {
 
 
         Bil bilarray [] = new Bil [3];
-       Dato dato1 = new Dato(1,1,2020);
+       Dato1 dato1 = new Dato1(1,1,2020);
         Bil bil1 = new Bil("Audi A6",dato1 ,"123456");
 
-        Dato dato2 = new Dato(1,5,2019);
+        Dato1 dato2 = new Dato1(1,5,2019);
         Bil bil2 = new Bil("Tesla s4 ",dato2,"54321");
 
        bilarray[0] = bil1;
